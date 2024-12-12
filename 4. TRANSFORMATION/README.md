@@ -23,7 +23,7 @@ Sink:
 - Type : Binary UnZipped file
 
 #### 3. Wait time:
-Purpose: 
+Purpose: This ensures that there is a controlled delay between data extraction, transformation to handle dependencies and synchronize tasks effectively.
 
 #### 4. Delete Zip:
 Purpose: Deleting the zipped folder as we have created a event based trigger for the pipeline.
