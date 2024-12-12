@@ -58,7 +58,7 @@ This workflow automates the manual refresh of a Power BI dataset. A trigger is u
 
 ![Child Pipeline](https://github.com/kantaharshitha/AppleHealth_Azure_End_to_End_project/blob/e5376ceeae06dd03156c3e61f87d072b3fc3418a/4.%20TRANSFORMATION/Refresh_powerBi/Logic%20app.png)
 
-#### Triggers:
+#### 9. Triggers:
 Event based trigger has been created. whenever a .zip folder is created in the Azure Data Lake Storage Gen 2 the Master pipeline will be triggered to start.
 
 ![Master Pipeline](https://github.com/kantaharshitha/AppleHealth_Azure_End_to_End_project/blob/23875dbe36771838f385d2e6cbbf58c17dde0ded/4.%20TRANSFORMATION/Master_Pipeline.png)
