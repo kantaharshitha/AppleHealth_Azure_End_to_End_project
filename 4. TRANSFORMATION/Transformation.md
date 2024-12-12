@@ -43,13 +43,20 @@ Sink:
 
 #### 6. Data Flow:
 
+Purpose: The data flow in Azure Data Factory extracts data from a SQL table, applies Conditional Split transformations, and saves the outputs as CSV files in designated Data Lake containers. New columns are derived from existing ones, and the enriched data is stored back in the SQL database for future use.
+
 ![Data_Flow](https://github.com/kantaharshitha/AppleHealth_Azure_End_to_End_project/blob/4408d3e854ab65d998438357dc246da0a4e833aa/4.%20TRANSFORMATION/Data_Flow.png)
 
 #### 7. Send Email:
 
+The workflow uses an HTTP trigger to receive requests and a "Outlook – Send Email" action to send dynamic emails with pipeline details like run ID, data factory name, and pipeline name. The JSON schema defines parameters for customizing the email content and recipient dynamically during execution.
+
+![Send_Email](https://github.com/kantaharshitha/AppleHealth_Azure_End_to_End_project/blob/b298a62af2027e8b03fa5dca9b91626b107b1a2e/4.%20TRANSFORMATION/Send%20Email/Logic_app.png)
 
 #### 8. Refresh PowerBI:
+This workflow automates the manual refresh of a Power BI dataset. A trigger is used to initiate the process, followed by the "Refresh a dataset" action that updates the specified Power BI dataset dynamically. This ensures efficient and on-demand data updates for reporting purposes.
 
+![Child Pipeline](https://github.com/kantaharshitha/AppleHealth_Azure_End_to_End_project/blob/e5376ceeae06dd03156c3e61f87d072b3fc3418a/4.%20TRANSFORMATION/Refresh_powerBi/Logic%20app.png)
 
 #### Triggers:
 Event based trigger has been created. whenever a .zip folder is created in the Azure Data Lake Storage Gen 2 the Master pipeline will be triggered to start.
