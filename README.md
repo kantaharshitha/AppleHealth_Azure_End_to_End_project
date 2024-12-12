@@ -57,8 +57,16 @@ Transformed SQL data into categorized and stored as CSV files and SQL tables for
 
 #### Alert Mail:
 Configured automated alert emails using Azure Logic Apps to notify stakeholders of pipeline status, including successful completions and error occurrences, ensuring timely monitoring and resolution.
+Here are the points for the alert section:
 
 #### PowerBI Data Refresh:
 Leveraged Azure Logic Apps to trigger Power BI refresh upon successful completion of the data pipeline.
+![image alt](https://github.com/kantaharshitha/AppleHealth_Azure_End_to_End_project/blob/23875dbe36771838f385d2e6cbbf58c17dde0ded/4.%20TRANSFORMATION/Master_Pipeline.png)
 
+### Alerts
+
+Action Groups: Configured to define recipients (e.g., email, SMS) for alerts.
+Metric Alert Rules: Set up to monitor pipeline performance metrics like execution time and errors.
+Alerts trigger when predefined thresholds are exceeded (e.g., pipeline failures or delays).
+Alerts are sent to the relevant stakeholders via Action Groups for quick response.
 
